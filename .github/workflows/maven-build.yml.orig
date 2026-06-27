@@ -16,7 +16,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml -DskipThrift=true -Dmaven.javadoc.skip=true -Dadditionalparam=-Xdoclint:none
+      run: mvn -B package --file pom.xml -DskipThrift=true
     strategy:
       matrix:
         java:
